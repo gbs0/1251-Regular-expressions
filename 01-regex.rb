@@ -30,14 +30,14 @@
 # --------------- QUANTIFICADORES ---------------
 # /?/ Quantificador:
 # Ex: /oie?/
-# O quantificador '?' é utilizado quando precisamos recuperar a palavra "oi", OPCIONALMENTE seguido por 1 "e"/.
+# O quantificador '?' é utilizado quando precisamos recuperar a palavra "oi", OPCIONALMENTE seguido por 1 "e".
 /oie?/.match?("oi") # => true
 /oie?/.match?("oie") # => true
 /oie?/.match?("oieeeee") # => true
 
 # /*/ Quantificador:
 # Ex: /oie*/
-# O quantificador '*' é usado quando precisamos recuperar a palavra "oi", OPCIONALMENTE seguido por N (muitos) caracteres "e".
+# O quantificador '*' é usado quando precisamos recuperar a palavra "oi", OPCIONALMENTE seguido por muitos caracteres "e".
 /oie*/.match?("oi") # => true
 /oie*/.match?("oie") # => true
 /oie*/.match?("oieeeeee") # => true
